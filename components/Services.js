@@ -1,4 +1,3 @@
-import React from "react";
 import styled from "styled-components";
 import { TbTruckDelivery } from "react-icons/tb";
 import { MdSecurity } from "react-icons/md";
@@ -16,20 +15,26 @@ const Services = () => {
               <h3>Super Fast and Free Delivery</h3>
             </div>
           </div>
+
           <div className="services-2">
             <div className="services-colum-2">
-              <MdSecurity className="icon" />
-              <h3>Non-Contact Shipping</h3>
+              <div>
+                <MdSecurity className="icon" />
+                <h3>Non-contact Shipping</h3>
+              </div>
             </div>
             <div className="services-colum-2">
-              <GiReceiveMoney className="icon" />
-              <h3>Money Back Guaranteed</h3>
+              <div>
+                <GiReceiveMoney className="icon" />
+                <h3>Money-back Guaranteed</h3>
+              </div>
             </div>
           </div>
+
           <div className="services-3">
             <div>
               <RiSecurePaymentLine className="icon" />
-              <h3>Super Secure System</h3>
+              <h3>Super Secure Payment System</h3>
             </div>
           </div>
         </div>
@@ -37,15 +42,12 @@ const Services = () => {
     </Wrapper>
   );
 };
+
 const Wrapper = styled.section`
   padding: 9rem 0;
 
   .grid {
     gap: 4.8rem;
-  }
-
-  .grid-three-column {
-    grid-template-columns: repeat(3, 1fr);
   }
 
   .services-1,

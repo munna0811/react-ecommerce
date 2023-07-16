@@ -1,13 +1,12 @@
-import React from "react";
 import styled from "styled-components";
 
 const Trusted = () => {
   return (
     <Wrapper className="brand-section">
       <div className="container">
-        <h3>Trusted by 1000+ companies</h3>
+        <h3>Trusted By 1000+ Companies</h3>
         <div className="brand-section-slider">
-          {/* first image */}
+          {/* my 1st img  */}
           <div className="slide">
             <img
               src="https://raw.githubusercontent.com/solodev/infinite-logo-carousel/master/images/image2.png"
@@ -43,6 +42,7 @@ const Trusted = () => {
     </Wrapper>
   );
 };
+
 const Wrapper = styled.section`
   padding: 9rem 0;
   background-color: ${({ theme }) => theme.colors.bg};

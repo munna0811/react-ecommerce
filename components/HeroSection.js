@@ -40,15 +40,6 @@ const HeroSection = ({ myData }) => {
 const Wrapper = styled.section`
   padding: 12rem 0;
 
-  .grid {
-    display: grid;
-    gap: 9rem;
-  }
-
-  .grid-two-column {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
   img {
     min-width: 10rem;
     height: 10rem;
